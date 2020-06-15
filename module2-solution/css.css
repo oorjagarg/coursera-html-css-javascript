@@ -1,0 +1,63 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Helvetica;
+	text-align: center;
+}
+h1 {
+	font-size: 175%;
+}
+section {
+	border: 1px solid black;
+	margin: 10px;
+	background-color: lightgray;
+}
+section >div {
+	font-size: 125%;
+	border: 1px solid black;
+	float:right;
+	padding: 5px;
+}
+#div1 {
+	background-color: pink;
+}
+#div2 {
+	background-color: red;
+}
+#div3 {
+	background-color: yellow;
+}
+p {
+	padding: 5px;
+	clear: right;
+}
+.row {
+	width: 100%;
+}
+@media (min-width: 992px) {
+	section {
+		float: left;
+		width: 31.31%
+	}
+}
+@media (max-width: 767px) {
+	section {
+		float:left;
+		clear: both;
+		width: 97.39%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	section {
+		float: left;
+	}
+	#section1, #section2 {
+		width: 47.3%;
+	}
+	#section3 {
+		width: 97.39%
+	}
+
+}
